@@ -144,7 +144,7 @@ malchecks = {
         'type': 'query',
         'checks': ['ip'],
         'url': 'https://isc.sans.edu/api/ip/{0}',
-        'badregex': ['.*attacks.*'],
+        'badregex': ['.*<attacks>(\d)+.*'],
         'goodregex': []
     },
     'AlienVault IP Reputation Database': {
